@@ -74,8 +74,8 @@ function feeds_jsonpath_parser_libraries_info() {
   $libraries['jsonpath'] = array(
     'name' => 'JSONPath',
     'vendor url' => 'https://github.com/SoftCreatR/JSONPath',
-    'download url' => 'https://github.com/SoftCreatR/JSONPath/archive/refs/tags/' . FEEDS_JSONPATH_PARSER_LIBRARY_VERSION . '.zip',
-    'version' => '9.0.1',
+    'download url' => 'https://github.com/SoftCreatR/JSONPath/releases/tag/' . FEEDS_JSONPATH_PARSER_LIBRARY_VERSION . '.zip',
+    'version' => '0.9.1',
   );
 
   return $libraries;
