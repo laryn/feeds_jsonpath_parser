@@ -4,5 +4,6 @@ backdrop = 1.x
 type = module
 
 dependencies[] = feeds
+php = 8.1
 
 package = Feeds
