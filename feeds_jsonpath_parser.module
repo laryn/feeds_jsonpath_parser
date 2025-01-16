@@ -7,7 +7,7 @@
 /**
  * Defines which commit to checkout from flow/jsonpath.
  */
-define('FEEDS_JSONPATH_PARSER_LIBRARY_VERSION', '0.9.1');
+define('FEEDS_JSONPATH_PARSER_LIBRARY_VERSION', '0.4.0');
 
 /**
  * Implements hook_autoload_info().
@@ -42,20 +42,20 @@ function feeds_jsonpath_parser_autoload_info() {
  * Implements hook_feeds_plugins().
  */
 function feeds_jsonpath_parser_feeds_plugins() {
-  return array(
-    'FeedsJSONPathParser' => array(
+  $info['FeedsJSONPathParser'] = array(
+    'name' => 'JSONPath parser',
+    'description' => 'Parse JSON files using JSONPath.',
+    'help' => 'More verbose description here. Will be displayed on processor selection menu.',
+    'module' => 'feeds_jsonpath_parser',
+    'handler' => array(
       'module' => 'feeds_jsonpath_parser',
-      'name' => t('JSONPath parser'),
-      'description' => t('Parse JSON files using JSONPath.'),
-      'handler' => array(
-        'module' => 'feeds_jsonpath_parser',
-        'parent' => 'FeedsParser',
-        'class' => 'FeedsJSONPathParser',
-        'file' => 'FeedsJSONPathParser.inc',
-        'path' => backdrop_get_path('module', 'feeds_jsonpath_parser'),
-      ),
+      'parent' => 'FeedsParser',
+      'class' => 'FeedsJSONPathParser',
+      'file' => 'FeedsJSONPathParser.inc',
+      'path' => backdrop_get_path('module', 'feeds_jsonpath_parser'),
     ),
   );
+  return $info;
 }
 
 

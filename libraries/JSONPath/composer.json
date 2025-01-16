@@ -10,11 +10,12 @@
       "homepage": "https://prismaticbytes.com",
       "role": "Developer"
     },
-    {
-      "name": "Sascha Greuel",
-      "email": "hello@1-2.dev",
-      "homepage": "https://1-2.dev",
-      "role": "Developer"
+    "require": {
+      "php": ">=5.4.0"
+    },
+    "require-dev": {
+      "peekmo/jsonpath": "dev-master",
+      "phpunit/phpunit": "^4.0"
     }
   ],
   "support": {
