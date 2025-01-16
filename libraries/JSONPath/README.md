@@ -1,7 +1,6 @@
-# JSONPath for PHP
+# JSONPath for PHP 8.1+
 
-[![Build Status](https://img.shields.io/github/workflow/status/SoftCreatR/JSONPath/Test/main?label=Build%20Status)](https://github.com/SoftCreatR/JSONPath/actions?query=workflow%3ATest)
-[![Latest Release](https://img.shields.io/packagist/v/SoftCreatR/JSONPath?color=blue&label=Latest%20Release)](https://packagist.org/packages/softcreatr/jsonpath)
+[![Build](https://img.shields.io/github/actions/workflow/status/SoftCreatR/JSONPath/.github/workflows/Test.yml?branch=main)](https://github.com/SoftCreatR/JSONPath/actions/workflows/Test.yml) [![Latest Release](https://img.shields.io/packagist/v/SoftCreatR/JSONPath?color=blue&label=Latest%20Release)](https://packagist.org/packages/softcreatr/jsonpath)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![Plant Tree](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Plant%20Tree&query=%24.total&url=https%3A%2F%2Fpublic.offset.earth%2Fusers%2Fsoftcreatr%2Ftrees)](https://ecologi.com/softcreatr?r=61212ab3fc69b8eb8a2014f4)
 [![Codecov branch](https://img.shields.io/codecov/c/github/SoftCreatR/JSONPath)](https://codecov.io/gh/SoftCreatR/JSONPath)
 [![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability-percentage/SoftCreatR/JSONPath)](https://codeclimate.com/github/SoftCreatR/JSONPath)
@@ -20,7 +19,7 @@ This project aims to be a clean and simple implementation with the following goa
 ## Installation
 
 ```bash
-composer require softcreatr/jsonpath:"^0.5 || ^0.7 || ^0.8"
+composer require softcreatr/jsonpath:"^0.9"
 ```
 
 ## JSONPath Examples
@@ -180,6 +179,13 @@ This package is Treeware. If you use it in production, then we ask that you [**b
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/Schrank>
+            <img src=https://avatars.githubusercontent.com/u/379680?v=4 width="100;"  alt=Fabian Blechschmidt/>
+            <br />
+            <sub style="font-size:14px"><b>Fabian Blechschmidt</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/warlof>
             <img src=https://avatars.githubusercontent.com/u/648753?v=4 width="100;"  alt=Loïc Leuilliot/>
             <br />
@@ -205,6 +211,22 @@ This package is Treeware. If you use it in production, then we ask that you [**b
             <img src=https://avatars.githubusercontent.com/u/1244112?v=4 width="100;"  alt=Oleg Andreyev/>
             <br />
             <sub style="font-size:14px"><b>Oleg Andreyev</b></sub>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/rcjsuen>
+            <img src=https://avatars.githubusercontent.com/u/15629116?v=4 width="100;"  alt=Remy Suen/>
+            <br />
+            <sub style="font-size:14px"><b>Remy Suen</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/esomething>
+            <img src=https://avatars.githubusercontent.com/u/64032?v=4 width="100;"  alt=esomething/>
+            <br />
+            <sub style="font-size:14px"><b>esomething</b></sub>
         </a>
     </td>
 </tr>

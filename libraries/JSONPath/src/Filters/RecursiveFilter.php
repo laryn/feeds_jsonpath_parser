@@ -6,12 +6,10 @@
  * @license https://github.com/SoftCreatR/JSONPath/blob/main/LICENSE  MIT License
  */
 
-declare(strict_types=1);
-
 namespace Flow\JSONPath\Filters;
 
-use Flow\JSONPath\{AccessHelper, JSONPathException};
-use ArrayAccess;
+use Flow\JSONPath\AccessHelper;
+use Flow\JSONPath\JSONPathException;
 
 class RecursiveFilter extends AbstractFilter
 {
@@ -30,9 +28,9 @@ class RecursiveFilter extends AbstractFilter
     /**
      * @throws JSONPathException
      */
-    private function recurse(array &$result, array|ArrayAccess $data): void
+    private function recurse(array &$result, array|object $data): void
     {
-        $result[] = $data;
+        $result[] = (array)$data;
 
         if (AccessHelper::isCollectionType($data)) {
             foreach (AccessHelper::arrayValues($data) as $value) {

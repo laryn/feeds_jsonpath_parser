@@ -27,7 +27,7 @@ function feeds_jsonpath_parser_requirements($phase) {
   $requirements['feeds_jsonpath_parser']['title'] = $t('JSONPath library');
 
   // Check that the library is successfully installed.
-  if (class_exists('\Flow\JSONPath\JSONPath', TRUE)) {
+  if (class_exists('Flow\JSONPath\JSONPath', TRUE)) {
 
     // Get the bundled class location.
     $path = backdrop_get_path('module', 'feeds_jsonpath_parser');
@@ -35,7 +35,7 @@ function feeds_jsonpath_parser_requirements($phase) {
     $module_class_file = $module_path . '/libraries/JSONPath/src/JSONPath.php';
 
     // Get the active class location.
-    $ReflectionClass = new ReflectionClass('\Flow\JSONPath\JSONPath');
+    $ReflectionClass = new ReflectionClass('Flow\JSONPath\JSONPath');
     $active_class_file = $ReflectionClass->getFileName();
 
     // Compare to determine we are using the bundled class.
