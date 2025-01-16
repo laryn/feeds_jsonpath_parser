@@ -7,7 +7,7 @@
 /**
  * Defines which commit to checkout from flow/jsonpath.
  */
-define('FEEDS_JSONPATH_PARSER_LIBRARY_VERSION', '0.4.0');
+define('FEEDS_JSONPATH_PARSER_LIBRARY_VERSION', '0.9.1');
 
 /**
  * Implements hook_autoload_info().
