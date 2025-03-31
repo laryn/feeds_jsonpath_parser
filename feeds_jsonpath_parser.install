@@ -32,7 +32,7 @@ function feeds_jsonpath_parser_requirements($phase) {
     // Get the bundled class location.
     $path = backdrop_get_path('module', 'feeds_jsonpath_parser');
     $module_path = BACKDROP_ROOT . '/' . $path;
-    $module_class_file = $module_path . '/libraries/jsonpath/src/JSONPath.php';
+    $module_class_file = $module_path . '/libraries/JSONPath/src/JSONPath.php';
 
     // Get the active class location.
     $ReflectionClass = new ReflectionClass('Flow\JSONPath\JSONPath');
